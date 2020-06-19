@@ -1,5 +1,5 @@
 var JPush = require("./lib/JPush/JPushAsync.js")
-var client = JPush.buildClient('7440b0b2cfd8505748743939', '2212fe937c3f5af9eb96b2b0')
+var client = JPush.buildClient('key', 'key2')
 var express = require('express');
 var app = express();
 var router = express.Router();
