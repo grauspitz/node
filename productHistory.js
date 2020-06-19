@@ -50,8 +50,8 @@ var notInitJson = { "status": "waiting Init" };
 var globalBaseJson = {};
 
 var baseCoversion = {
-  'QuerySa': { 'type': 'baseurl', 'url': 'https://api10.kenta.cn:11000/test?name=QuerySa', 'intervalrequest': true, 'intervaltime': 86400000 },
-  'QuerySsb': { 'type': 'baseurl', 'url': 'https://api10.kenta.cn:11000/test?name=QuerySsb', 'intervalrequest': true, 'intervaltime': 86400000 },
+  'QuerySa': { 'type': 'baseurl', 'url': URL['QuerySa'], 'intervalrequest': true, 'intervaltime': 86400000 },
+  'QuerySsb': { 'type': 'baseurl', 'url': URL['QuerySsb'], 'intervalrequest': true, 'intervaltime': 86400000 },
   '货品代号列表':{'type':'basefunc', 'relatedFunction':"makeKeys", "baseNeed":['QuerySa']},
   '查询货品代号':{'type':'basefunc', 'relatedFunction':"makeCode", "baseNeed":['QuerySa','QuerySsb','货品代号列表']},   
 }
